@@ -9,6 +9,7 @@
     --botao-azul: #167BF7;
     --cor-de-fundo: #00030C;
     --fonte-principal: "inter";
+    --botao-azul-efeito: #3c92fa;
 }
 
 body {
@@ -54,6 +55,11 @@ body {
     display: block;
     text-decoration: none;
     margin-bottom: 1em;
+}
+
+.conteiner__botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
 }
 
 .botao__secundario {
@@ -134,6 +140,14 @@ body {
 .lista__link a {
     text-decoration: none;
     color: var(--branco-principal);
+}
+
+.lista__link a:hover {
+    color: var(--botao-azul);
+}
+
+.lista__link a:active {
+    color: aqua;
 }
 
 .rodape__texto {
